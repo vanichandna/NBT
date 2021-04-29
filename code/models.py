@@ -258,11 +258,11 @@ def model_definition(vector_dimension, label_count, slot_vectors, value_vectors,
     # as we are returning always, can't be null
     update_coefficient = tf.constant(0.49)
 
-    if False:
-        #rule based
-    #if use_softmax:
+    if use_softmax:
 
-        if learn_belief_state_update:
+        if False:
+            #rule based
+        #if learn_belief_state_update:
 
             if value_specific_decoder: # value-specific update
                 
